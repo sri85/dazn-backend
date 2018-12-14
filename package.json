@@ -1,0 +1,13 @@
+{
+  "name": "api-tests",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha tests/* --reporter mochawesome --reporter-options reportDir=reports,reportFilename=report"
+  },
+  "dependencies": {
+    "chakram": "1.5.0",
+    "mocha": "3.5.0",
+    "chakram-joi": "^1.0.0",
+    "mochawesome": "^3.1.1"
+  }
+}
