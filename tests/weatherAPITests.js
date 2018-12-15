@@ -50,7 +50,7 @@ describe("Weather API Tests", function () {
 
     it("Check the status code for the API when the postcode is invalid", () => {
 
-        let resp = chakram.post(testData.WEATHER_URL, { address: "EC1A 1BB" });
+        const resp = chakram.post(testData.WEATHER_URL, { address: "EC1A 1BB" });
         return expect(resp).to.have.status(statusCodes.HTTP_INVALID_POSTCODE);
     });
 
