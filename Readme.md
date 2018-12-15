@@ -6,7 +6,7 @@ These API tests are written using chakram and mocha which gives a BDD style of w
 
 ## Instructions for running tests
 
-1. Navigate to `api-tests` folder
+1. Navigate to `dazn-backend` folder.
 2. Run `npm install`
 3. Run `npm test`
 
