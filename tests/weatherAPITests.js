@@ -6,6 +6,10 @@ const statusCodes = require('./statusCode');
 const joi = require('joi');
 
 describe("Weather API Tests", function () {
+    // The default timeout for mocha tests in 2000 ms , but the weather-app-api does not consistently respond within this time
+    //which causes the tests to fail inconsistently ,hence the value has been set to a higher value of 10000 ms
+    this.timeout(10000);
+
     it("Check whether latitude and longitude are present in the response ", () => {
         const latLongSchema = joi.object({
             latitude: joi.number().required(),
@@ -43,7 +47,7 @@ describe("Weather API Tests", function () {
                     'Content-Type': 'application/123'
                 },
             })
-        .then(function (response) {
+        .then((response) => {
             return expect(response).to.have.status(statusCodes.HTTP_INVALID_POSTCODE);
         })
     });
