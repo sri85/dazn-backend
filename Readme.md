@@ -1,5 +1,6 @@
 # Introduction
-These API tests are written using chakram and mocha which gives a BDD style of writing tests making it more human readable.
+These API tests are written using [chakram](https://github.com/dareid/chakram) which gives a BDD style of writing tests making 
+the tests more human readable.
 
 ## Prerequisite
 1. [NodeJs](https://nodejs.org/en/) 
